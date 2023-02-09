@@ -5,13 +5,13 @@ CREATE DATABASE doggo_central;
 
 DROP TABLE IF EXISTS dog_clothes;
 
-CREATE TABLE dogs_clothes(
+CREATE TABLE dog_clothes(
     id SERIAL PRIMARY KEY,
-    NAME VARCHAR(100),
+    name VARCHAR(100),
     description TEXT,
     price DECIMAL(5, 2),
     link TEXT NOT NULL,
-    image1 TEXT,
+    image TEXT,
     is_fav BOOLEAN
 );
 

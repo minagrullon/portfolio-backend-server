@@ -2,12 +2,15 @@
 const express = require("express");
 const cors = require("cors");
 
+const clothesController = require("./controllers/clothesController");
 //configuration
 const app = express();
 
 //middleware
 app.use(express.json());
 app.use(cors());
+
+app.use("/clothes", clothesController);
 
 //routes
 app.get("/", (req, res) => {
