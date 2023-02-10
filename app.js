@@ -2,7 +2,7 @@
 const express = require("express");
 const cors = require("cors");
 
-const clothesController = require("./controllers/clothesController");
+const itemsController = require("./controllers/itemsController");
 //configuration
 const app = express();
 
@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use("/clothes", clothesController);
+app.use("/items", itemsController);
 
 //routes
 app.get("/", (req, res) => {
