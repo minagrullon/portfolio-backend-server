@@ -1,11 +1,11 @@
 const db = require("../db/dbConfig.js");
 
 //index
-const getAllComments = async (item_id) => {
+const getAllComments = async (itemId) => {
   try {
     const allComments = await db.any(
       "SELECT * FROM comments WHERE item_id=$1",
-      item_id
+      itemId
     );
     return allComments;
   } catch (error) {

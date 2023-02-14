@@ -11,7 +11,7 @@ const {
 
 //import comments into items
 const commentsController = require("./commentsController");
-items.use("/:itemsId/comments", commentsController);
+items.use("/:itemId/comments", commentsController);
 
 //index
 items.get("/", async (req, res) => {

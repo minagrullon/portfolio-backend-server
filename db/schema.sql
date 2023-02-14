@@ -11,7 +11,7 @@ CREATE TABLE items(
     description TEXT,
     price DECIMAL(5, 2),
     link TEXT NOT NULL,
-    image TEXT,
+    image TEXT NOT NULL,
     is_fav BOOLEAN,
     category VARCHAR(50)
 );
